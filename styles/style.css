@@ -98,6 +98,7 @@ ol {
   height: 100%;
 }
 .result__video-container {
+  position: relative;
   width: 711px;
   height: 386px;
 }
@@ -285,6 +286,4 @@ ol {
 .content__list-item {
   padding: 3px;
 }
-.result__video-container {
-  position: relative;
-}
+
