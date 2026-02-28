@@ -144,6 +144,7 @@ ol {
   color: #545050;
 }
 .content__card-link {
+  display: block;
   color: #fff;
   text-decoration: none;
 }
@@ -265,10 +266,6 @@ ol {
 .search-form__label,
 .content__list-item {
   cursor: pointer;
-}
-.content__card-link {
-  /* тут */
-  display: block;
 }
 .content__card-link:hover {
   text-decoration: underline;
