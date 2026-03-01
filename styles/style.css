@@ -65,7 +65,6 @@ ol {
 
 .content {
   display: flex;
-  flex-direction: row;
   align-items: flex-end;
   gap: 30px;
   align-self: center;
@@ -81,6 +80,13 @@ ol {
   justify-content: space-between;
   align-items: flex-start;
 }
+.content__details {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  width: 100%;
+  height: 100%;
+}
 .content__list-container {
   position: relative;
   display: flex;
@@ -90,12 +96,10 @@ ol {
   padding-right: 3px;
   overflow-y: scroll;
 }
-.content__details {
+.content__list {
   display: flex;
   flex-direction: column;
-  gap: 26px;
-  width: 100%;
-  height: 100%;
+  gap: 18px;
 }
 .result__video-container {
   position: relative;
@@ -106,11 +110,7 @@ ol {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-.content__list {
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
+  object-position: center;
 }
 .content__video-card-thumbnail {
   width: 194px;
@@ -135,7 +135,7 @@ ol {
   line-height: 1;
 }
 .title {
-  font-family: "Oswald", "sans-serif";
+  font-family: "Oswald", sans-serif;
   font-weight: 700;
   font-size: 75px;
   line-height: 0.94;
@@ -151,7 +151,7 @@ ol {
 }
 .content__video-card-title {
   overflow: hidden;
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   font-weight: 700;
   font-size: 30px;
   text-transform: uppercase;
@@ -190,7 +190,7 @@ ol {
   border-right: none;
   border-left: none;
   color: #fff;
-  font-family: "Fira Sans Condensed";
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-size: 18px;
   background-color: transparent;
@@ -204,7 +204,7 @@ ol {
   color: rgb(255 255 255 / 0.7);
 }
 
-.search-form__label:has(.search-form__textfield:focus-visible) {
+.search-form__label:has(:focus-visible) {
   outline: 1px solid #fff;
 }
 .search-form__pseudo-checkbox {
@@ -228,16 +228,13 @@ ol {
   text-decoration: 1px underline #fff;
   text-underline-offset: 2px; /* точно не видно на сколько подчеркивание должно быть ниже текста */
 }
-.search-form__label:has(.search-form__checkbox:focus-visible) {
-  outline: 1px solid #fff;
-}
 
 .button {
   border: 1px solid #fff;
   padding-top: 6px;
   padding-bottom: 6px;
   color: #fff;
-  font-family: "Fira Sans Condensed";
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 700;
   font-size: 18px;
   background-color: transparent;
@@ -286,4 +283,3 @@ ol {
 .content__list-item {
   padding: 3px;
 }
-
